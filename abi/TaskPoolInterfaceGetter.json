@@ -1,0 +1,82 @@
+{
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_app_id",
+          "type": "uint256"
+        },
+        {
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "name": "_data",
+          "type": "string"
+        },
+        {
+          "name": "_script",
+          "type": "string"
+        },
+        {
+          "name": "_output",
+          "type": "string"
+        },
+        {
+          "name": "_params",
+          "type": "string"
+        }
+      ],
+      "name": "create_task",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_task",
+          "type": "address"
+        }
+      ],
+      "name": "get_status",
+      "outputs": [
+        {
+          "name": "_create_time",
+          "type": "uint256"
+        },
+        {
+          "name": "_dispatch_time",
+          "type": "uint256"
+        },
+        {
+          "name": "_start_time",
+          "type": "uint256"
+        },
+        {
+          "name": "_complete_time",
+          "type": "uint256"
+        },
+        {
+          "name": "_cancel_time",
+          "type": "uint256"
+        },
+        {
+          "name": "_error_time",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
